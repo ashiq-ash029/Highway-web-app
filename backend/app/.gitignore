@@ -1,0 +1,44 @@
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Node.js / React
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Uploaded and processed video data
+data/uploads/*
+data/processed/*
+data/snapshots/*
+data/reports/*
+!data/uploads/.gitkeep
+!data/processed/.gitkeep
+!data/snapshots/.gitkeep
+!data/reports/.gitkeep
+
+# AI model files (avoid uploading large files)
+models/*.pt
+models/*.onnx
+models/*.keras
+models/*.h5
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
